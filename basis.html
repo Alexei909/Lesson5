@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta chatset="utf-8">
+        <meta http-equiv="Content-Type">
+        <title>Сотрудники</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="Image/x-icon" href="2948210.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <style>
+            a{
+                text-decoration: none;
+            }
+        
+        </style>
+
+        <!-- Навигационная панель -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand">Сотрудники</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#table">Список сотрудников</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#card">Сотрудник месяца</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#form">Форма добавления</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        <!-- Навигационная панель -->
+        
+        <div class="space"></div>
+
+        <!-- Таблица -->
+        <div class="table-responsve">
+            <caption>Список сотрудников</caption>
+            <table class="table table-hover table-bordered border-dark-subtle" id="table">
+            <thead class="table-dark">
+                <tr>
+				    <th scope="col">ФИО</th>
+				    <th scope="col">Должность</th>
+				    <th scope="col">Телефон</th>
+                </tr>
+            </thead>
+            <tbody class="table_secondary">
+                <tr>
+                    <td>Лесков П.И</td>
+                    <td>Менеджер</td>
+                    <td>+79236050054</td>
+                </tr>
+                <tr>
+                    <td>Васильев И.И</td>
+                    <td>Бухгалтер</td>
+                    <td>+79657082346</td>
+                </tr>
+                <tr>
+                    <td>Петров П.А.</td>
+                    <td>IT-специалист</td>
+                    <td>+79430036597</td>
+                </tr>
+    
+            </tbody>
+            </tbody>
+        </table>
+        </div>
+        <!-- Таблица -->
+
+        <div class="space"></div>
+            
+        <!-- Карточка сотрудника месяца -->
+        <div class="card text-white bg-dark mb-3" style="max-width: 18rem; margin-left: 2rem;" id="card">
+            <div class="card-body">
+              <h1 class="card-title">Сотрудник месяца</h1>
+            </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">ФИО: Лесков П.И</li>
+                <li class="list-group-item">Должность: Менеджер</li>
+                <li class="list-group-item">Телефон: +79236050054</li>
+                <li class="list-group-item">Дом.адрес: ул. Пушкина</li>
+                <li class="list-group-item">e-mail: leckov123@mail.ru</li>
+              </ul>   
+        </div>
+        <!-- Карточка сотрудника месяца -->
+
+        <div class="space"></div>
+
+        <!-- Форма добавления сотрудника -->
+        <form role="form" id="form">
+            <p class="fs-4 bg-dark text-light text-center">Добавление сотрудника</p>
+            <div class="mb-3">
+                <lable for="fio">ФИО</lable>
+                <input type="fio" class="form-control" id="fio" placeholder="Введите ФИО">
+            </div>
+            <div class="mb-3">
+                <lable for="job">Должность</lable>
+                <input type="job" class="form-control" id="job" placeholder="Введите должность">
+            </div>
+            <div class="mb-3">
+                <lable for="number">Номер</lable>
+                <input type="number" class="form-control" id="number" placeholder="Введите номер телефона">
+            </div>
+            <button type="submit" class="btn btn-dark">Добавить</button>
+        </form>
+        <!-- Форма добавления сотрудника -->
+        
+        <div class="space"></div>
+
+    </body>
+</html>
